@@ -39,10 +39,10 @@ void create_process(void)
  */
 int main(void)
 {
-	create_process();
-	create_process();
-	create_process();
-	create_process();
-	create_process();
+	int i;
+
+	for (i = 0; i < 5; i++)
+		create_process();
+
 	return (infinite_while());
 }
