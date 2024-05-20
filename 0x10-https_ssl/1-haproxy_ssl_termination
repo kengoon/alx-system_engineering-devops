@@ -37,8 +37,11 @@ defaults
 frontend  kengo-frontend
         bind *:80
         mode http
-        bind *:443 ssl crt /etc/haproxy/certs/kengo-on.tech.pem
         redirect scheme https if !{ ssl_fc }
+        default_backend kengo-backend
+frontend kengo-frontend-https
+        bind *:443 ssl crt /etc/haproxy/certs/kengo-on.tech.pem
+        http-request set-header X-Forwarded-Proto https
         default_backend kengo-backend
 backend kengo-backend
         balance roundrobin
