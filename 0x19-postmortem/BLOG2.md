@@ -17,7 +17,7 @@ A misconfigured database query went rogue, performing a full table scan and brin
 ```mermaid
 timeline
     title Incident Timeline
-    2024-06-07 10:00 AM : Issue detected via monitoring alerts
+    2024-06-07 10: 00 AM : Issue detected via monitoring alerts
     2024-06-07 10:05 AM : On-call engineer begins investigation
     2024-06-07 10:15 AM : Web server and application logs show no anomalies; database team notified
     2024-06-07 10:30 AM : Database team examines query logs and performance metrics
