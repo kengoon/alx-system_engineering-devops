@@ -31,6 +31,7 @@ def top_ten(subreddit):
         return
 
     # Parse the JSON response and extract the 'data' section
+    print(response.status_code)
     results = response.json().get("data")
 
     # Print the titles of the top 10 hottest posts
