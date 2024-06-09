@@ -2,7 +2,9 @@
 """
 Script that queries subscribers on a given Reddit subreddit.
 """
+import os
 
+os.system("pip3 install requests")
 import requests
 
 
