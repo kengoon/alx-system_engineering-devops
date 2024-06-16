@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Script that queries subscribers on a given Reddit subreddit.
+"""
 import json
 import urllib.request
 
